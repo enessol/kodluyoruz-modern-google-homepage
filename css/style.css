@@ -1,0 +1,210 @@
+/* tum elementleri esit duzeyde sifirlamak icin yazdim */
+*{
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* navigasyon bari icin yazdigim kodlar burada basliyor */
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top: 14px;
+}
+
+nav a {
+    color: rgb(0,0,0,0.87);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 5px 6.7px;
+}
+
+nav a:hover {
+    opacity: .85;
+   text-decoration: underline; 
+}
+
+nav img {
+    cursor: pointer;
+    margin: auto 7px;
+    pad: 5px;
+    width: 34px;
+}
+
+nav img:hover {
+    opacity: .8;
+}
+
+/* navigasyon bari kodlari burada bitiyor */
+
+.appsbutton {
+    filter: invert(48%) sepia(1%) saturate(0%) hue-rotate(193deg) brightness(94%) contrast(87%); /*bu satir filtre ile, siyah olan simgeyi gercek google sayfasindaki orijinal rengi koyu griye donusturuyor*/
+}
+
+/* nav button {
+    background: #4285f4;
+    border: 1px solid #4285f4;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 7px;
+    outline: none;
+    padding: 7px 12px;  } */
+/* hesaba giris yapilmadiginda gozukmesi gereken yapi burada saklanacak */
+
+.signed-in {
+    border-radius: 50px;
+}
+
+/* sayfanin ortasinda yer almasi gereken ana yapi burada basliyor */
+.main {
+    flex: 1;
+}
+
+.main .logo {
+    display: block;
+    margin: 0px auto;
+    margin-top: 208px;
+}
+
+.search-box {
+    margin: 0 auto;
+    margin-top: -8px;
+    position: relative;
+    text-align: center;
+    width: 580px;
+}
+
+.search-box .search-bar {
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    color: rgba(0, 0, 0, 0.87);
+    display: block;
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 100ms;
+    padding: 13px;
+    padding-left: 45px;
+    width: 100%;
+}
+
+.search-box .search-bar:hover {
+   border: 1px solid #fff; 
+   box-shadow: 0 0 2px rgba(0, 0, 0, 0.05),
+               0 0 2px rgba(0, 0, 0, 0.05),
+               0 0 3px rgba(0, 0, 0, 0.05),
+               0 0 4px rgba(0, 0, 0, 0.05),
+               0 0 5px rgba(0, 0, 0, 0.05),
+               0 0 4px rgba(0, 0, 0, 0.05),
+               0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.search-box .search-icon {
+    left: 14px;
+    opacity: .4;
+    position: absolute;
+    top: 13px;
+    width: 20px;
+}
+
+.search-box .voice-icon {
+    position: absolute;
+    right: 24px;
+    top: 13px;
+    width: 22px;
+}
+
+.search-btn {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    height: 36px;
+    margin-right: 10px;
+    margin-top: 28px;
+    outline: none;
+    padding: 9px 15px;
+    transition: border-color 100ms;
+}
+
+.search-btn:hover {
+    border: 1px solid #bbb;
+    box-shadow: 1px 1px 3px 0px #ccc;
+    color: #222; 
+  /* border: 1px solid #aaa;   */
+}
+
+/* sayfanin ortasinda yer almasi gereken ana yapi burada bitiyor */
+
+.language {
+    color: #111;
+    font-size: 13px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.language a {
+    color: #1a0dab;
+    margin-left: 5px;
+}
+
+.language a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #f2f2f2;
+}
+
+/* footer burada basliyor */
+footer h4 {
+    border: 1px solid #eee;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 39.5px;
+    padding-left: 29px;
+}
+
+footer a {
+    color: #5f6368;
+    display: inline-block;
+    font-size: 14px;
+    padding: 12px 11.3px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    border-top: 1px solid #ddd;
+    display: flex;
+}
+
+.link-left {
+    flex: 1;
+   padding-left: 18.7px; 
+}
+
+.link-right {
+    padding-right: 18.7px;
+}
+
+/* footer burada bitiyor */
